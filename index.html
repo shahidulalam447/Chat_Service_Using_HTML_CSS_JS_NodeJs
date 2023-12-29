@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Service Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header style="max-width:100%; background:#3498db; padding-top: 10px; text-align:center; color:white; height: 60px;">
+	<h1>IsDB-BISEW IT Scholarship Programme R-53</h1>
+    </header>
+    <section style="max-width:100%; overflow: hidden;">
+    <div style="max-width:20%; float: left;">
+	<table  style="padding-top:28px; align-item:center;">
+		<tr><td><img src="chat1.jpg" alt="picture" /></td></tr>
+		<tr><td><img src="chat4.png" alt="picture" /></td></tr>	
+	</table></div>
+    
+    <div class="chatApplication" style="max-width:80%; float: right; align:center;">
+        <div class="container">
+            <div>
+                <h3 class="logo">Chat Service</h3>
+            </div>
+
+            <div class="userBox">
+                <h3> <i class="fa-solid fa-users-viewfinder"></i> Active Users</h3>
+                <div id="users"></div>
+            </div>
+            <div class="chatBox-wrapper">
+                <div class="chat-box">
+                    <div id="conversation" class="outputBox"></div>
+                </div>
+                <div class="chat-app">
+                    <ul class="chatapp-list">
+                        <li>
+                            <input type="text" class="inputField" id="data" style="width: 420px;"
+                                required />
+                        </li>
+                        <li>
+                            <ul class="medialist">
+                                <li>
+                                    <div class="fileicon-box">
+                                        <input type="file" id="imagefile" class="sendFile" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fileicon-box">
+                                        <input type="file" id="otherfile" class="sendFile" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btnSend" id="datasend"><i class="fa fa-paper-plane"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer style="max-width:100%; background-color: black; text-align:center; padding:30px; color: white;">
+	<div><b>@MD SHAHIDUL ALAM<br>1272289-CS/PNTL-M/53/01</b></div>
+    </footer>
+    <script src="./jquery.min.js"></script>
+    <script src="./socket.io.js"></script>
+    <script src="./master.js"></script>
+</body>
+</html>
